@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "Weather", targetNamespace = "http://ws.cdyne.com/WeatherWS/", wsdlLocation = "file:/C:/Users/hamza/AppData/Local/Temp/tempdir3244849781283111321.tmp/Weather_1.wsdl")
+@WebServiceClient(name = "Weather", targetNamespace = "http://ws.cdyne.com/WeatherWS/", wsdlLocation = "http://wsf.cdyne.com/WeatherWS/weather.asmx?wsdl")
 public class Weather
     extends Service
 {
@@ -30,7 +30,7 @@ public class Weather
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/hamza/AppData/Local/Temp/tempdir3244849781283111321.tmp/Weather_1.wsdl");
+            url = new URL("http://wsf.cdyne.com/WeatherWS/weather.asmx?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
