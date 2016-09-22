@@ -2,15 +2,18 @@ package com.ihamza.service;
 
 import org.springframework.stereotype.Service;
 
+import com.ihamza.soap.Weather;
 import com.ihamza.soap.WeatherReturn;
+import com.ihamza.soap.WeatherSoap;
 
 @Service
 public class WeatherService {
 	
 	public WeatherReturn getWeatherByZIP(String zip){
 		
-		return new WeatherReturn(true,"Magical City Found","NY","New York",
-				"White Plains",(short) 15,"N/A","63","87","E7","29.97S","","","");
+		Weather weather = new Weather();
+		WeatherSoap soap = weather.getWeatherSoap();
+		return soap.getCityWeatherByZIP(zip);
 		
 	}
 
