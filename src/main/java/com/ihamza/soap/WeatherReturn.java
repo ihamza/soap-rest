@@ -58,7 +58,16 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class WeatherReturn {
 
-    @XmlElement(name = "Success")
+    @Override
+	public String toString() {
+		return "WeatherReturn [success=" + success + ", responseText=" + responseText + ", state=" + state + ", city="
+				+ city + ", weatherStationCity=" + weatherStationCity + ", weatherID=" + weatherID + ", description="
+				+ description + ", temperature=" + temperature + ", relativeHumidity=" + relativeHumidity + ", wind="
+				+ wind + ", pressure=" + pressure + ", visibility=" + visibility + ", windChill=" + windChill
+				+ ", remarks=" + remarks + "]";
+	}
+
+	@XmlElement(name = "Success")
     protected boolean success;
     @XmlElement(name = "ResponseText")
     protected String responseText;
