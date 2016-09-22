@@ -66,6 +66,31 @@ public class WeatherReturn {
 				+ wind + ", pressure=" + pressure + ", visibility=" + visibility + ", windChill=" + windChill
 				+ ", remarks=" + remarks + "]";
 	}
+		public WeatherReturn() {
+			// TODO Auto-generated constructor stub
+		}
+		
+    
+	public WeatherReturn(boolean success, String responseText, String state, String city, String weatherStationCity,
+				short weatherID, String description, String temperature, String relativeHumidity, String wind,
+				String pressure, String visibility, String windChill, String remarks) {
+			super();
+			this.success = success;
+			this.responseText = responseText;
+			this.state = state;
+			this.city = city;
+			this.weatherStationCity = weatherStationCity;
+			this.weatherID = weatherID;
+			this.description = description;
+			this.temperature = temperature;
+			this.relativeHumidity = relativeHumidity;
+			this.wind = wind;
+			this.pressure = pressure;
+			this.visibility = visibility;
+			this.windChill = windChill;
+			this.remarks = remarks;
+		}
+
 
 	@XmlElement(name = "Success")
     protected boolean success;
