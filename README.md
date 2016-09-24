@@ -3,12 +3,13 @@ This SOAP-Rest Demo Application
 is exposing rest webservice using Sring boot + MVC + Data
 that connects to SOAP Webservice get the weather for specific zip code
 
+Download jar from releases page https://github.com/ihamza/soap-rest/releases
+
 run jar using java 8
 
 java -jar jar-file.jar
 
-open browser
-http://localhost:8080/swagger-ui.html
+open browser http://localhost:8080/swagger-ui.html
 
 make some requests by zip code for example 10001
 
